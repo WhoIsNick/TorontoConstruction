@@ -4,209 +4,550 @@
 <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hosting Node App On Azure</title>
+    <title>Toronto Construction</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
+	  <!-- Styles -->
+	  <link rel='stylesheet' href='assets/css/bootstrap.min.css'>
+	  <link rel='stylesheet' href='assets/css/animate.min.css'>
+	  <link rel='stylesheet' href="assets/css/font-awesome.min.css"/>
+	  <link rel='stylesheet' href="assets/css/style.css"/>
+	
+	  <!-- Fonts -->
+	  <link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 
-    <!-- Custom CSS -->
-    <link href="./css/shop-homepage.css" rel="stylesheet">
+	  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	  <!--[if lt IE 9]>
+	  	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  	  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	  <![endif]-->
+			
+	  <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="core/app-nav/app-nav.module.js"></script>
+    <script src="core/app-nav/app-nav.component.js"></script>
+    <script src="app.module.js"></script>
 
 </head>
 
-<body>
+<body> 
+<div id="parallax"> </div>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Bootstrap</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="https://nodejs.org/">Node</a>
-                    </li>
-                    <li>
-                        <a href="https://azure.microsoft.com/en-in/">Azure</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/">Github</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+<header id="header" class="navbar navbar-inverse navbar-fixed-top" role="banner">
+  <div class="container">
+	  <div class="navbar-header">
+  		<a href="#home" class="navbar-brand">TORONTO <span class="lighter">CONSTRUCTION</span></a>
+	  </div>
 
-    <!-- Page Content -->
-    <div class="container">
+	<nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+	<ul class="nav navbar-nav">
+		<li>
+		<a href="#home">Home</a>
+		</li>
+		<li>
+		<a href="#about">About us</a>
+		</li>
+		<li>
+		<a href="#gallery">Projects</a>
+		</li>
+		<!--<li>
+		<a href="#slider">Testimonials</a>
+		</li>
+		<li>
+		<a href="#faq">FAQ</a>
+		</li>
+		<li>
+		<a href="#contactarea">Contact</a>
+		</li>-->
+	</ul>
+	</nav>
+</div>
+</header>
 
-        <div class="row">
+<!-- HOME
+	================================================== -->
+<section id="home" class="section">
+<div class="container">
+	<div class="row">
+		<div class="row align-items-center">
+			<div class="hometext">
+				<h1 class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="0.1s">TORONTO <span class="lighter">CONSTRUCTION</span></h1>
+				<p class="lead wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s">
+					Leading High Performance Builder & Renovator
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
 
-            <div class="col-md-3">
-                <p class="lead">Node+Azure+Github</p>
-                <div class="list-group">
-                    <a href="https://nodejs.org/" class="list-group-item">Node</a>
-                    <a href="https://azure.microsoft.com/en-in/" class="list-group-item">Azure</a>
-                    <a href="https://github.com/" class="list-group-item">Github</a>
-                </div>
-            </div>
+<!-- About us
+	================================================== -->
+<section id="about" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/1.jpg);">
+<div class="wrapsection">
+	<div class="parallax-overlay" style="background-color: #01b0d1;opacity:0.9;"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<!-- Title -->
+				<div class="maintitle">
+					<h3 class="section-title"><strong>ABOUT US</strong></h3>
+					<p class="lead">
+						As an innovative, fast growing full-service construction company, 
+            TORONTO CONSTRUCTION has the expertise to manage, build, and deliver 
+            projects per our clients' standards and expectations. We specialize 
+            in commercial and residential construction, Green Building, 
+            custom built homes and remodeling projects largely in Toronto.
+					</p>
+				</div>
+			</div>
 
-            <div class="col-md-9">
+			<div class="col-md-4 col-sm-6">
+				<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
+					<span class="glyphicon glyphicon-stats"></span>
+					<p>
+						Our success can be attributed to our philosophy  transparency throughout the construction process.
+          </p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.2s">
+					<span class="glyphicon glyphicon-tree-deciduous"></span>
+					<p>
+						Although headquartered in Banner Elk, North Carolina, we also have an office in Blowing Rock for your convenience.
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
 
-                <div class="row carousel-holder">
+				<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.4s">
+					<span class="glyphicon glyphicon-usd"></span>
+					<p>
+						We work with our clients to meet and to exceed their expectations for budget, schedule and quality.
+					</p>
+				</div>
 
-                    <div class="col-md-12">
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <img class="slide-image" src="./images/azure.jpg" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="slide-image" src="./images/node.jpg" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="slide-image" src="./images/Github.png" alt="">
-                                </div>
-                            </div>
-                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                            </a>
-                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                            </a>
-                        </div>
-                    </div>
+      
+      </div>
+		</div>
+	</div>
+</div>
+</section>
 
-                </div>
+<!-- Projects
+	================================================== -->
+<section class="parallax section" style="background-image: url(../../assets/img/landing-page/landing-page1.jpg);">
+	<div class="wrapsection">
+	<div class="parallax-overlay"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 sol-sm-12">
+				<div class="maintitle">
+					<h3 class="section-title justtitle">Residential</h3>
+					<p class="lead bottom0 wow bounceInUp">
+						TORONTO CONSTRUCTION takes pride in building your dream custom home and understands that it is an exciting, and sometimes, intimidating journey.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
+<section id="gallery" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/2.jpg);">
+<div class="wrapsection">
+	<div class="parallax-overlay" style="background-color:#00c1c1;opacity:0.9;"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 sol-sm-12">
+				<div class="maintitle">
+					<h3 class="section-title">Projects</h3>
+					<p class="lead wow flipInX">
+						Our promise to you is to be there every step of the way, 
+						helping you navigate through all aspects of the building process. 
+						Our projects are successful thanks to communicating and working 
+						closely with our clients and carefully chosen group of architects, 
+						engineers, subcontractors and suppliers. Establishing a budget, 
+						putting together a construction schedule, understanding the permit
+						process and working through the many design decisions along the way,
+						are only a few of the key aspects of our collaboration with our clients.
+					</p>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+				<a href="../../assets/img/projects/1.jpg" title="This is the description">
+					<img src="../../assets/img/projects/1.jpg"; alt="" class="image-responsive">
+					<div class="description">
+						<!--<span class="caption">This is <b>awesome</b></span> -->
+						<!--<span class="camera"><i class="fa fa-camera"></i></span>-->
+						<div class="clearfix"></div>
+					</div>			
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a href="../../assets/img/projects/2.jpg" title="This is the description">
+				<img src="../../assets/img/projects/2.jpg" alt="" class="image-responsive">
+					<div class="description">
+						<!--<span class="caption">Great <b>marathon</b></span> -->
+						<!--<span class="camera"><i class="fa fa-link"></i></span>-->
+						<div class="clearfix"></div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a href="../../assets/img/projects/3.jpg" title="This is the description">
+				<img src="../../assets/img/projects/3.jpg" alt="" class="image-responsive">					
+					<div class="description">
+						<!--<span class="caption">Running <b>miles</b></span> -->
+						<!--<span class="camera"><i class="fa fa-heart"></i></span>-->
+						<div class="clearfix"></div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a href="../../assets/img/projects/4.jpg" title="This is the description">
+				<img src="../../assets/img/projects/4.jpg" alt="" class="image-responsive">					
+					<div class="description">
+						<!--<span class="caption">Young <b>volunteers</b></span> -->
+						<!--<span class="camera"><i class="fa fa-tachometer"></i></span>-->
+						<div class="clearfix"></div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a href="../../assets/img/projects/5.jpg" title="This is the description">
+				<img src="../../assets/img/projects/5.jpg" alt="" class="image-responsive">					
+					<div class="description">
+						<!--<span class="caption">Charity <b>concerts</b></span> -->
+						<!--<span class="camera"><i class="fa fa-microphone"></i></span>-->
+						<div class="clearfix"></div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a href="../../assets/img/projects/6.jpg" title="This is the description">
+				<img src="../../assets/img/projects/6.jpg" alt="" class="image-responsive">					
+					<div class="description">
+						<!--<span class="caption">Generous <b>sponsors</b></span> -->
+						<!--<span class="camera"><i class="fa fa-coffee"></i></span>-->
+						<div class="clearfix"></div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
 
-                <div class="row">
+<!-- Text Carousel
+	================================================== -->
+<!--<section id="slider" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/4.jpg);">
+<div class="wrapsection">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div id="Carousel" class="carousel slide">
+					<ol class="carousel-indicators">
+						<li data-target="#Carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#Carousel" data-slide-to="1"></li>
+						<li data-target="#Carousel" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<blockquote>
+								<p class="lead">
+									You have not lived today until you have done something for someone who can never repay you.
+								</p>
+								<small>John Bunyan, Marathon</small>
+							</blockquote>
+						</div>
+						<div class="item">
+							<blockquote>
+								<p class="lead">
+									The simplest acts of kindness are by far more powerful then a thousand heads bowing in prayer.
+								</p>
+								<small>Mahatma Gandhi</small>
+							</blockquote>
+						</div>
+						<div class="item">
+							<blockquote>
+								<p class="lead">
+									There is no exercise better for the heart than reaching down and lifting people up.
+								</p>
+								<small>John Holmes, Organizer</small>
+							</blockquote>
+						</div>
+					</div>
+					<a class="left carousel-control" href="#Carousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a class="right carousel-control" href="#Carousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>-->
 
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="./images/azure-1.jpg" alt="">
-                            <div class="caption">
-                                
-                                <h4><a href="https://azure.microsoft.com/en-in/">Azure</a>
-                                </h4>
-                                <p>Microsoft Azure is an open, flexible, enterprise-grade cloud computing platform. Move faster, do more and save money with IaaS + PaaS. <a target="_blank" href="https://azure.microsoft.com/en-in/">Try It</a>.</p>
-                            </div>
-                            
-                        </div>
-                    </div>
+<!-- FAQ
+	================================================== -->
+<!--<section id="faq" class="section">
+<div class="wrapsection">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 sol-sm-12">
+				<div class="maintitle">
+					<h3 class="section-title">Conditions of <span class="wow bounceInRight">Participation</span></h3>
+					<p class="lead">
+						Sed gravida, tortor in tincidunt sagittis, ligula lacus ultrices justo, sed mattis sem sem ut ex. Ut nunc elit, auctor et quam sit amet, convallis purus.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-12">
+				<div class="faq-block wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0s">
+					<div class="panel-group">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+								How old can I be? </a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse">
+								<div class="panel-body">
+									 How old. This is the detailed answer. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+								Can we donate clothes? </a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse">
+								<div class="panel-body">
+									 Can we? This is the detailed answer. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+								How many miles to run ? </a>
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse">
+								<div class="panel-body">
+									 So how many. This is the detailed answer. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<div class="faq-block wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0.1s">
+					<div class="panel-group">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+								Can we show sponsors? </a>
+								</h4>
+							</div>
+							<div id="collapseFour" class="panel-collapse collapse">
+								<div class="panel-body">
+									 Sponsors. This is the detailed answer. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+								Are there free drinks? </a>
+								</h4>
+							</div>
+							<div id="collapseFive" class="panel-collapse collapse">
+								<div class="panel-body">
+									 Drinks. This is the detailed answer. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+								Is medical exam free ? </a>
+								</h4>
+							</div>
+							<div id="collapseSix" class="panel-collapse collapse">
+								<div class="panel-body">
+									 Medical. This is the detailed answer. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<div class="faq-block wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0.2s">
+					<div class="panel-group">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+								Do you help with passport? </a>
+								</h4>
+							</div>
+							<div id="collapseSeven" class="panel-collapse collapse">
+								<div class="panel-body">
+									 Passport. This is the detailed answer. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+								What routes should one follow? </a>
+								</h4>
+							</div>
+							<div id="collapseEight" class="panel-collapse collapse">
+								<div class="panel-body">
+									 Routes. This is the detailed answer. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
+								Do I have to pay a tax? </a>
+								</h4>
+							</div>
+							<div id="collapseNine" class="panel-collapse collapse">
+								<div class="panel-body">
+									 Tax. This is the detailed answer. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>-->
 
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="./images/node-1.jpg" alt="">
-                            <div class="caption">
-                                
-                                <h4><a href="https://nodejs.org/">Node.js</a>
-                                </h4>
-                                <p>Node.js is an open-source, cross-platform JavaScript runtime environment for developing a diverse variety of tools and applications</p>
-                            </div>
-                            
-                        </div>
-                    </div>
+<!-- Random
+	================================================== -->
+<!--<section class="whitecolor parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/5.jpg);">
+<div class="wrapsection">
+	<div class="container">
+	<div class="row">
+		<div class="col-md-12 sol-sm-12">
+			<div class="maintitle">
+				<h3 class="section-title justtitle">Charity <span class="wow flipInX">&amp; love</span> are the same</h3>
+				<p class="lead bottom0">
+					 Fusce fermentum lectus id turpis suscipit, ut egestas magna volutpat. Donec a purus tellus. Nunc ut dolor eu est gravida auctor quis vitae.
+				</p>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+</section>-->
 
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="./images/Bootstrap.jpg" alt="">
-                            <div class="caption">
-                                
-                                <h4><a href="http://getbootstrap.com/">Bootstrap</a>
-                                </h4>
-                                <p>Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first web sites</p>
-                            </div>
-                            
-                        </div>
-                    </div>
+<!-- Contact
+	================================================== -->
+<!--<section id="contactarea" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/map.png);">
+<div class="wrapsection">
+	<div class="parallax-overlay" style="background-color: #1cbb9b;opacity:0.95;"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="maintitle">
+					<h3 class="section-title">Get in Touch</h3>
+					<p class="lead">
+						If you have questions about our events, don't hesitate to send us your message. This is a real working contact form, test it!
+					</p>
+				</div>
+				<form id="contact" name="contact" method="post" class="text-left">
+					<fieldset>
+						<div class="row">
+							<div class="col-md-4 wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2s">
+								<label for="name">Name<span class="required">*</span></label>
+								<input type="text" name="name" id="name" size="30" value="" required/>
+							</div>
+							<div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
+								<label for="email">Email<span class="required">*</span></label>
+								<input type="text" name="email" id="email" size="30" value="" required/>
+							</div>
+							<div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
+								<label for="phone">Phone</label>
+								<input type="text" name="phone" id="phone" size="30" value=""/>
+							</div>
+						</div>
+						<div class="wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:15px;">
+							<label for="message">Message<span class="required">*</span></label>
+							<textarea name="message" id="message" required></textarea>
+						</div>
+						<div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
+							<input id="submit" type="submit" name="submit" value="Send"/>
+						</div>
+					</fieldset>
+				</form>
+				<div id="success">		
+					<p class="contactalert">
+						Your message was sent succssfully! I will be in touch as soon as I can.
+					</p>			
+				</div>
+				<div id="error">			
+					<p class="contactalert">
+						 Something went wrong, try refreshing and submitting the form again.
+					</p>			
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>-->
 
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="./images/github-1.jpg" alt="">
-                            <div class="caption">
-                                
-                                <h4><a href="https://github.com/">Github</a>
-                                </h4>
-                                <p>GitHub is a web-based Git repository hosting service. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features</p>
-                            </div>
-                            
-                        </div>
-                    </div>
+<!-- Credits 
+=============================================== -->
+<!--<section id="credits" class="text-center">
+	<span class="social wow zoomIn">
+	<a href="#"><i class="fa fa-facebook"></i></a>
+	<a href="#"><i class="fa fa-twitter"></i></a>
+	<a href="#"><i class="fa fa-skype"></i></a>
+	<a href="#"><i class="fa fa-linkedin"></i></a>
+	<a href="#"><i class="fa fa-pinterest"></i></a>
+	<a href="#"><i class="fa fa-google-plus"></i></a>
+	</span><br/>
+	Copyright &copy; <a href="#">Your Agency</a> 
+	<br/>Template By <i class="fa fa-heart"></i> WowThemes.Net
+</section>-->
 
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                
-                                <h4><a href="#">About Me</a>
-                                </h4>
-                                <p>I am a software Engineer From India ,I am intrested in Microsoft Technologies and FULL Stack/Mean Stack Applications </p>
-                            </div>
-                            
-                        </div>
-                    </div>
 
-                    
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-    <!-- /.container -->
-
-    <div class="container">
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Node+Azure+Github @2016</p>
-                </div>
-            </div>
-        </footer>
-
-    </div>
-    <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="./js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="./js/bootstrap.min.js"></script>
-
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/jquery.scrollTo.min.js"></script>
+<script src="assets/js/jquery.localScroll.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/validate.js"></script>
+<script src="assets/js/common.js"></script>
 </body>
 
 </html>
